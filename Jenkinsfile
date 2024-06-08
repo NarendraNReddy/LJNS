@@ -1,11 +1,12 @@
 pipeline {
     agent {
         label 'AGENT-1'
-        disableConcurrentBuilds()
+        
     }
     options {
         // Timeout counter starts AFTER agent is allocated
         timeout(time: 30, unit: 'MINUTES')
+        disableConcurrentBuilds
     }
     stages {
         stage('Build') {
