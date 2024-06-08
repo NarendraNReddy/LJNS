@@ -6,22 +6,22 @@ pipeline{
                 sh 'echo Build stage'
             }
         }
+
+    stage('Test'){
+        steps{
+                sh 'echo Test stage'
+            }
+        }
+
     }
 
-    stages {
-        stage('Test'){
-         steps{
-            sh 'echo Test stage'
+    stage('Deploy'){
+        steps{
+                sh 'echo Deploy stage'
             }
         }
+
     }
-    stages {
-        stage('Deploy'){
-         steps{
-            sh 'echo Deploy stage'
-            }
-        }
-    }  
 
     
 }
