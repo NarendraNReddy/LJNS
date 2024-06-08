@@ -35,7 +35,7 @@ pipeline {
                 sh 'echo This is Deploy'
             }
         }
-        stage('print paras'){
+        stage("print params"){
             steps{
                 echo "Hello ${params.PERSON}"
                 echo "Biography: ${params.BIOGRAPHY}"
@@ -43,7 +43,6 @@ pipeline {
                 echo "Choice: ${params.CHOICE}"
                 echo "Password: ${params.PASSWORD}"
             }
-            }
-        }
+        }        
     }
 }
