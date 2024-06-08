@@ -8,14 +8,14 @@ pipeline{
         }
     }
 
-    stages{
+    stages {
         stage('Test'){
          steps{
             sh 'echo Test stage'
             }
         }
     }
-    stages{
+    stages {
         stage('Deploy'){
          steps{
             sh 'echo Deploy stage'
